@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  background-color: #faf2fa;
+  color: #2d2438;
+}
+
+body {
+  background-image:
+    radial-gradient(at 12% -8%, rgba(198, 100, 139, 0.14) 0px, transparent 55%),
+    radial-gradient(at 92% 108%, rgba(138, 91, 168, 0.12) 0px, transparent 55%),
+    radial-gradient(at 50% 55%, rgba(123, 160, 132, 0.06) 0px, transparent 65%),
+    url('/noise.svg');
+  background-attachment: fixed;
+  background-repeat: no-repeat, no-repeat, no-repeat, repeat;
+}
+
+::selection {
+  background-color: #c6648b;
+  color: #fffafd;
+}
